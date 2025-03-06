@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ORS - Online Reservation System</title>
+  <style>
+    /* Reset and global styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      position: relative;
+      min-height: 100vh;
+      color: #333;
+    }
+    
+    /* Blurred background image of a train */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url('https://via.placeholder.com/1600x900.png?text=Train+Background') no-repeat center center/cover;
+      filter: blur(8px);
+      z-index: -1;
+    }
+    
+    /* Navigation Bar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: rgba(255,255,255,0.9);
+      padding: 10px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    .navbar .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #007C7A;
+      text-decoration: none;
+    }
+    .navbar ul {
+      list-style: none;
+      display: flex;
+    }
+    .navbar ul li {
+      margin-left: 20px;
+    }
+    .navbar ul li a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+    .navbar .signin-btn {
+      background-color: #007C7A;
+      padding: 8px 12px;
+      color: #fff;
+      border-radius: 4px;
+      text-decoration: none;
+      font-size: 14px;
+    }
+    
+    /* Section Styles */
+    section {
+      padding: 40px 20px;
+      background-color: rgba(255,255,255,0.95);
+      margin: 20px auto;
+      width: 90%;
+      max-width: 800px;
+      border-radius: 8px;
+    }
+    section h2 {
+      margin-bottom: 20px;
+      color: #007C7A;
+    }
+    section p, section ul {
+      margin-bottom: 15px;
+    }
+    
+    /* Booking Form Styles */
+    .booking-form {
+      display: flex;
+      flex-direction: column;
+      max-width: 400px;
+      margin: 20px auto;
+    }
+    .booking-form label {
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    .booking-form input,
+    .booking-form select,
+    .booking-form button {
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    .booking-form button {
+      background-color: #007C7A;
+      color: #fff;
+      cursor: pointer;
+      border: none;
+    }
+    .booking-form button:hover {
+      background-color: #005f5d;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <a href="#home" class="logo">ORS</a>
+    <ul>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#booking">Booking</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+      <!-- Sign In/Log In link -->
+      <li><a href="LR.html" class="signin-btn">Sign In / Log In</a></li>
+    </ul>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home">
+    <h1>Welcome to ORS</h1>
+    <p>Your online reservation system for efficient appointment scheduling and resource allocation.</p>
+  </section>
+
+  <!-- About Us Section -->
+  <section id="about">
+    <h2>About Us</h2>
+    <p>ORS is a cutting-edge online reservation system designed to streamline appointment scheduling and resource allocation for service platforms.</p>
+    <p><strong>Our Mission:</strong> To deliver efficient, reliable, and user-friendly booking solutions for customers, service providers, and administrators alike.</p>
+    <p><strong>Our Goals:</strong></p>
+    <ul>
+      <li>Enhance customer experience with intuitive design and easy navigation.</li>
+      <li>Improve operational efficiency for service providers.</li>
+      <li>Ensure seamless resource management for administrators.</li>
+    </ul>
+  </section>
+
+  <!-- Booking Section -->
+  <section id="booking">
+    <h2>Booking</h2>
+    <form class="booking-form">
+      <label for="origin">Origin:</label>
+      <select id="origin" name="origin" required>
+        <option value="Kigali">Kigali</option>
+      </select>
+      
+      <label for="destination">Destination:</label>
+      <select id="destination" name="destination" required>
+        <option value="Musanze">Musanze</option>
+        <option value="Rwamagana">Rwamagana</option>
+      </select>
+      
+      <label for="date">Date of Journey:</label>
+      <input type="date" id="date" name="date" required>
+      
+      <button type="submit">Book Now</button>
+    </form>
+  </section>
+
+  <!-- Contact Us Section -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p><strong>ORS Company</strong></p>
+    <p>Email: info@ors.com</p>
+    <p>Phone: +1234567890</p>
+  </section>
+</body>
+</html>
