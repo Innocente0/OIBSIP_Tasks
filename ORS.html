@@ -87,32 +87,31 @@
       margin-bottom: 15px;
     }
     
-    /* Booking Form Styles */
-    .booking-form {
-      display: flex;
-      flex-direction: column;
-      max-width: 400px;
-      margin: 20px auto;
+    /* Home Section enhancements */
+    #home {
+      text-align: center;
     }
-    .booking-form label {
-      margin-bottom: 5px;
-      font-weight: bold;
+    #home h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+      color: #007C7A;
     }
-    .booking-form input,
-    .booking-form select,
-    .booking-form button {
-      padding: 10px;
-      margin-bottom: 15px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
+    #home p {
+      font-size: 18px;
+      margin-bottom: 20px;
     }
-    .booking-form button {
+    #reserve-btn {
       background-color: #007C7A;
       color: #fff;
-      cursor: pointer;
       border: none;
+      padding: 12px 24px;
+      font-size: 16px;
+      border-radius: 4px;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
     }
-    .booking-form button:hover {
+    #reserve-btn:hover {
       background-color: #005f5d;
     }
   </style>
@@ -122,8 +121,9 @@
   <nav class="navbar">
     <a href="#home" class="logo">ORS</a>
     <ul>
-      <li><a href="#about">About Us</a></li>
-      <li><a href="#booking">Booking</a></li>
+      <li><a href="#home">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="booking.html">Booking</a></li>
       <li><a href="#contact">Contact Us</a></li>
       <!-- Sign In/Log In link -->
       <li><a href="index.html" class="signin-btn">Sign In / Log In</a></li>
@@ -132,51 +132,32 @@
 
   <!-- Home Section -->
   <section id="home">
-    <h1>Welcome to ORS</h1>
-    <p>Your online reservation system for efficient appointment scheduling and resource allocation.</p>
+    <h1>Welcome to online reservation system for efficient appointment scheduling and resource allocation</h1>
+    <p>connecting and linking you to places</p>
+    <!-- Reserve Now button now directly links to booking.html -->
+    <a id="reserve-btn" href="booking.html">Reserve Now</a>
   </section>
 
   <!-- About Us Section -->
   <section id="about">
     <h2>About Us</h2>
     <p>ORS is a cutting-edge online reservation system designed to streamline appointment scheduling and resource allocation for service platforms.</p>
-    <p><strong>Our Mission:</strong> To deliver efficient, reliable, and user-friendly booking solutions for customers, service providers, and administrators alike.</p>
+    <p><strong>Our Mission:</strong> To deliver efficient, reliable, and user-friendly booking solutions for our customers, service providers, and administrators alike.</p>
     <p><strong>Our Goals:</strong></p>
     <ul>
+      <li>Connect our customers to their destination.</li>
       <li>Enhance customer experience with intuitive design and easy navigation.</li>
       <li>Improve operational efficiency for service providers.</li>
       <li>Ensure seamless resource management for administrators.</li>
     </ul>
   </section>
 
-  <!-- Booking Section -->
-  <section id="booking">
-    <h2>Booking</h2>
-    <form class="booking-form">
-      <label for="origin">Origin:</label>
-      <select id="origin" name="origin" required>
-        <option value="Kigali">Kigali</option>
-      </select>
-      
-      <label for="destination">Destination:</label>
-      <select id="destination" name="destination" required>
-        <option value="Musanze">Musanze</option>
-        <option value="Rwamagana">Rwamagana</option>
-      </select>
-      
-      <label for="date">Date of Journey:</label>
-      <input type="date" id="date" name="date" required>
-      
-      <button type="submit">Book Now</button>
-    </form>
-  </section>
-
   <!-- Contact Us Section -->
   <section id="contact">
     <h2>Contact Us</h2>
-    <p><strong>ORS Company</strong></p>
-    <p>Email: info@ors.com</p>
-    <p>Phone: +1234567890</p>
+    <p><strong>&copy; ORS Company</strong></p>
+    <p>Email: infoORS@gmail.com</p>
+    <p>Phone: +250781198416</p>
   </section>
 </body>
 </html>

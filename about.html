@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About Us - ORS</title>
+  <style>
+    /* Global Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background: url('https://c1.wallpaperflare.com/preview/495/718/576/blur-blurred-blurry-fast.jpg') no-repeat center center/cover;
+      color: #333;
+      line-height: 1.6;
+      padding: 20px;
+    }
+    /* Navigation Bar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: rgba(255,255,255,0.9);
+      padding: 10px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    .navbar .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #007C7A;
+      text-decoration: none;
+    }
+    .navbar ul {
+      list-style: none;
+      display: flex;
+    }
+    .navbar ul li {
+      margin-left: 20px;
+    }
+    .navbar ul li a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+    .navbar .signin-btn {
+      background-color: #007C7A;
+      padding: 8px 12px;
+      color: #fff;
+      border-radius: 4px;
+      text-decoration: none;
+      font-size: 14px;
+    }
+    /* Section Styles */
+    section {
+      padding: 40px 20px;
+      background-color: rgba(255,255,255,0.95);
+      margin: 20px auto;
+      width: 90%;
+      max-width: 1000px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    section h2 {
+      margin-bottom: 20px;
+      color: #007C7A;
+    }
+    section p, section ul {
+      margin-bottom: 15px;
+      font-size: 16px;
+    }
+    /* Gallery Styles */
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+    }
+    .gallery img {
+      max-width: 30%;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    }
+    /* Lists */
+    .list {
+      list-style: disc;
+      margin-left: 20px;
+    }
+    /* Back to Home Link */
+    .back-home {
+      text-align: center;
+      margin: 20px 0;
+    }
+    .back-home a {
+      text-decoration: none;
+      color: #007C7A;
+      font-weight: bold;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <a href="ORS.html" class="logo">ORS</a>
+    <ul>
+      <li><a href="ORS.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="booking.html">Booking</a></li>
+      <li><a href="ORS.html">Contact Us</a></li>
+      <li><a href="index.html" class="signin-btn">Sign In / Log In</a></li>
+    </ul>
+  </nav>
+
+  <!-- Company Information Section -->
+  <section id="company-info">
+    <h2>About Our Company</h2>
+    <p>ORS is a leading provider of advanced online reservation systems tailored for the transportation industry. With a commitment to innovation and customer service, we empower passengers with seamless booking experiences and efficient resource allocation. Our state-of-the-art technology and dedicated team ensure that every journey is smooth, safe, and reliable.</p>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery">
+    <h2>Our Train Gallery</h2>
+    <p>Take a look at some of our premium trains that serve countless journeys every day.</p>
+    <div class="gallery">
+      <img src="https://t4.ftcdn.net/jpg/02/32/57/55/240_F_232575515_BSR4tjKvM5aEwdyO3i0Hj8dVV6yzf2Fh.jpg" alt="Train 1">
+      <img src="https://t3.ftcdn.net/jpg/06/40/42/10/240_F_640421076_pi9sT5o4OdeDRd1cS8AnDlfnSxcQV00Y.jpg" alt="Train 2">
+      <img src="https://t4.ftcdn.net/jpg/02/81/05/07/240_F_281050747_CM8WnkYgAGhmIAj8uGjeJTooizTV5Yy8.jpg" alt="Train 3">
+    </div>
+  </section>
+
+  <!-- Awards & Recognition Section -->
+  <section id="awards">
+    <h2>Awards & Recognition</h2>
+    <p>Our commitment to excellence has earned us several awards, including:</p>
+    <ul class="list">
+      <li>Best Reservation System Award 2021</li>
+      <li>Innovation in Transportation Award 2020</li>
+      <li>Excellence in Customer Service Award 2019</li>
+    </ul>
+  </section>
+
+  <!-- Travels Section -->
+  <section id="travels">
+    <h2>Our Travels</h2>
+    <p>We proudly serve multiple routes, ensuring smooth travels for our passengers. Some of our key routes include:</p>
+    <ul class="list">
+      <li>Kigali to Musanze</li>
+      <li>Kigali to Rwamagana</li>
+      <li>Kigali to Huye</li>
+      <li>Huye to Butare</li>
+      <li>And many more regional and intercity connections</li>
+    </ul>
+  </section>
+
+  <!-- Collaborations Section -->
+  <section id="collaborations">
+    <h2>Our Collaborations</h2>
+    <p>We collaborate with leading organizations to enhance our services and ensure secure transactions. Our partners include:</p>
+    <ul class="list">
+      <li>Major Banks for secure payment processing</li>
+      <li>Government Transport Authorities</li>
+      <li>Technology Providers for innovative solutions</li>
+      <li>Travel and Tourism Agencies</li>
+    </ul>
+  </section>
+
+  <!-- Back to Home Link -->
+  <div class="back-home">
+    <a href="index.html">← Back to Home</a>
+  </div>
+</body>
+</html>
